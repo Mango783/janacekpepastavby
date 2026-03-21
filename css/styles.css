@@ -145,6 +145,17 @@ footer {
     /* Na tabletech 2 sloupce */
     .grid {
         grid-template-columns: repeat(2, 1fr);
+    
+    .lists-container {
+        display: flex;
+        gap: 40px;
+        flex-wrap: wrap; /* Zajistí zalomení na malých displejích */
+}
+
+    .list-item {
+        flex: 1;
+        min-width: 250px; /* Minimální šířka, než se seznamy dají pod sebe */
+}
     }
 }
 
