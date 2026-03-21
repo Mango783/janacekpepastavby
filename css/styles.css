@@ -71,6 +71,19 @@ header {
     flex: 2;
 }
 
+/* OPRAVA: Seznamy vedle sebe definovány globálně */
+.lists-container {
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.list-item {
+    flex: 1;
+    min-width: 250px;
+}
+
 .side-contact {
     flex: 1;
     background: var(--light-grey);
@@ -79,22 +92,22 @@ header {
     min-width: 280px;
 }
 
+.contact-image-box {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.contact-image-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+}
+
 .side-contact a {
     color: var(--dark-blue);
     text-decoration: none;
     font-weight: bold;
-}
-
-.lists-container {
-    display: flex;
-    gap: 40px;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
-
-.list-item {
-    flex: 1;
-    min-width: 200px;
 }
 
 /* --- PROJEKTY --- */
